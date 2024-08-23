@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas Deliciosas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #007bff; /* Blue */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3; /* Darker Blue */
+            padding: 0.5em 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #003d7a; /* Even Darker Blue */
+        }
+        main {
+            padding: 2em;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2em;
+            justify-content: center;
+        }
+        .recipe {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            padding: 1em;
+            border: 2px solid #007bff; /* Blue */
+        }
+        .recipe h2 {
+            color: #0056b3; /* Darker Blue */
+        }
+        .recipe iframe {
+            width: 100%;
+            height: 200px;
+            border: 0;
+        }
+        footer {
+            background-color: #343a40; /* Dark Gray */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Receitas Deliciosas</h1>
+    </header>
+    <nav>
+        <a href="#bolo-cenoura">Bolo de Cenoura</a>
+        <a href="#bolo-chocolate">Bolo de Chocolate</a>
+        <a href="#mousse-maracuja">Mousse de Maracujá</a>
+    </nav>
+    <main>
+        <div class="recipe" id="bolo-cenoura">
+            <h2>Bolo de Cenoura</h2>
+            <p>Aprenda a fazer um delicioso bolo de cenoura com uma cobertura incrível.</p>
+            <iframe src="https://www.youtube.com/embed/Qz71OldB6O8?si=F8kiUQrrTyU4e00c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="recipe" id="bolo-chocolate">
+            <h2>Bolo de Chocolate</h2>
+            <p>Receita fácil e rápida de bolo de chocolate que vai agradar a todos.</p>
+            <iframe src="https://www.youtube.com/embed/0MHntg5HEPk?si=4ohCyhhLoydHAgmT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="recipe" id="mousse-maracuja">
+            <h2>Mousse de Maracujá</h2>
+            <p>Uma mousse de maracujá cremosa e deliciosa, perfeita para a sobremesa.</p>
+            <iframe src="https://www.youtube.com/embed/WtqLP-3PmAU?si=s9o02F6mDEQRT9JO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Receitas Deliciosas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
